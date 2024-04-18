@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"camera_update_script",
+  "%Name":"vertex_add_point",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"camera_update_script",
+  "name":"vertex_add_point",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
