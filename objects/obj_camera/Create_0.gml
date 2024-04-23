@@ -3,6 +3,9 @@
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 
+view_matrix = undefined;
+projection_matrix = undefined;
+
 vertex_format_begin();
 vertex_format_add_position_3d();
 vertex_format_add_normal();
