@@ -12,20 +12,6 @@ vertex_format = vertex_format_end();
 
 vertex_buffer = vertex_create_buffer();
 vertex_begin(vertex_buffer, vertex_format);
-/*
-var x1 = 400;
-var y1 = 400;
-var x2 = 600;
-var y2 = 600;
-
-vertex_add_point(vertex_buffer, x1, y1, 100, 0, 0, 1, 0, 0, c_white, 1);
-vertex_add_point(vertex_buffer, x2, y1, 100, 0, 0, 1, 0, 0, c_white, 1);
-vertex_add_point(vertex_buffer, x2, y2, 100, 0, 0, 1, 0, 0, c_white, 1);
-
-vertex_add_point(vertex_buffer, x2, y2, 100, 0, 0, 1, 0, 0, c_blue, 1);
-vertex_add_point(vertex_buffer, x1, y2, 100, 0, 0, 1, 0, 0, c_blue, 1);
-vertex_add_point(vertex_buffer, x1, y1, 100, 0, 0, 1, 0, 0, c_blue, 1);
-*/
 
 for (var i = 0; i < room_width; i += 32) {
 	for (var j = 0; j < room_height; j += 32){
@@ -35,13 +21,13 @@ for (var i = 0; i < room_width; i += 32) {
 		else {
 			var color = c_white;
 		}
-		vertex_add_point(vertex_buffer, i, j, 100, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i + 32, j, 100, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i + 32, j + 32, 100, 0, 0, 1, 0, 0, color, 1);
+		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, 0, 0, color, 1);
+		vertex_add_point(vertex_buffer, i + 32, j, 0, 0, 0, 1, 0, 0, color, 1);
+		vertex_add_point(vertex_buffer, i + 32, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
 
-		vertex_add_point(vertex_buffer, i + 32, j + 32, 100, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i, j + 32, 100, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i, j, 100, 0, 0, 1, 0, 0, color, 1);
+		vertex_add_point(vertex_buffer, i + 32, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
+		vertex_add_point(vertex_buffer, i, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
+		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, 0, 0, color, 1);
 	}
 }
 

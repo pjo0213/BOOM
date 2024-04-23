@@ -17,6 +17,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"spr_floor","order":2,"path":"sprites/spr_floor/spr_floor.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
   ],

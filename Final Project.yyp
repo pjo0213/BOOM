@@ -34,8 +34,9 @@
   },
   "name":"Final Project",
   "resources":[
-    {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
