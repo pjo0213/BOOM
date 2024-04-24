@@ -4,32 +4,43 @@ look_pitch = clamp(look_pitch, -85, 85);
 
 var move_speed = 7;
 
+var dx = 0;
+var dy = 0;
+
 if (keyboard_check(ord("W"))){
-	x += dcos(look_direction) * move_speed;
-	y -= dsin(look_direction) * move_speed;
+	dx += dcos(look_direction) * move_speed;
+	dy -= dsin(look_direction) * move_speed;
 }
 
 if (keyboard_check(ord("A"))){
-	x -= dsin(look_direction) * move_speed;
-	y -= dcos(look_direction) * move_speed;
+	dx -= dsin(look_direction) * move_speed;
+	dy -= dcos(look_direction) * move_speed;
 }
 
 if (keyboard_check(ord("S"))){
-	x -= dcos(look_direction) * move_speed;
-	y += dsin(look_direction) * move_speed;
+	dx -= dcos(look_direction) * move_speed;
+	dy += dsin(look_direction) * move_speed;
 }
 
 if (keyboard_check(ord("D"))){
-	x += dsin(look_direction) * move_speed;
-	y += dcos(look_direction) * move_speed;
+	dx += dsin(look_direction) * move_speed;
+	dy += dcos(look_direction) * move_speed;
+}
+
+if (collision_circle(x, y, 10, obj_wall, false, true) == noone){
+	x += dx;
+	y += dy;
 }
 
 if (mouse_check_button_pressed(mb_left)){
 	if (obj_camera.view_matrix != undefined and obj_camera.projection_matrix != undefined){
 		var vector = screen_to_world(window_mouse_get_x(), window_mouse_get_y(), obj_camera.view_matrix, obj_camera.projection_matrix);
 		var bullet = instance_create_depth(vector[3], vector[4], vector[5], obj_bullet);
-		bullet.xspeed = 4 * vector[0];
-		bullet.yspeed = 4 * vector[1];
-		bullet.zspeed = 4 * vector[2];
+		bullet.xspeed = 50 * vector[0];
+		bullet.yspeed = 20 * vector[1];
+		bullet.zspeed = 50 * vector[2];
 	}
 }
+
+
+show_debug_message("(" + string(x) + ", " + string(y) + ") " + string(collision_circle(x, y, 10, obj_wall, false, true)));

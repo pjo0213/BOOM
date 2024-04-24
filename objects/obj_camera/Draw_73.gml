@@ -17,7 +17,6 @@ camera_apply(camera);
 
 vertex_submit(vertex_buffer, pr_trianglelist, -1);
 
-
 with (obj_wall) {
 	event_perform(ev_draw, 0);
 }

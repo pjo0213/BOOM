@@ -16,8 +16,8 @@ vertex_format = vertex_format_end();
 vertex_buffer = vertex_create_buffer();
 vertex_begin(vertex_buffer, vertex_format);
 
-for (var i = 0; i < room_width; i += 32) {
-	for (var j = 0; j < room_height; j += 32){
+for (var i = 0; i < room_width * 10; i += 32) {
+	for (var j = 0; j < room_height * 10; j += 32){
 		if ((i % 64 == 0 && j % 64 == 0) or ( i % 64 > 0 && j % 64 > 0)){
 			var color = c_grey;
 		}
