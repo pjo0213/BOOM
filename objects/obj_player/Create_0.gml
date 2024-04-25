@@ -1,7 +1,4 @@
-z = -128;
-
-//x = obj_wall.x;
-//y = obj_wall.y;
+z = -64;
 
 look_direction = 0;
 look_pitch = 0;
