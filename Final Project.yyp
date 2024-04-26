@@ -43,6 +43,7 @@
     {"id":{"name":"screen_to_world","path":"scripts/screen_to_world/screen_to_world.yy",},},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},},
     {"id":{"name":"sh_billboard","path":"shaders/sh_billboard/sh_billboard.yy",},},
+    {"id":{"name":"sh_cuboid","path":"shaders/sh_cuboid/sh_cuboid.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},

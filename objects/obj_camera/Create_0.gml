@@ -16,23 +16,23 @@ vertex_format = vertex_format_end();
 vertex_buffer = vertex_create_buffer();
 vertex_begin(vertex_buffer, vertex_format);
 
-for (var i = 0; i < room_width * 10; i += 32) {
-	for (var j = 0; j < room_height * 10; j += 32){
-		if ((i % 64 == 0 && j % 64 == 0) or ( i % 64 > 0 && j % 64 > 0)){
-			var color = c_grey;
-		}
-		else {
-			var color = c_white;
-		}
-		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i + 32, j, 0, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i + 32, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
+//for (var i = 0; i < room_width * 10; i += 32) {
+//	for (var j = 0; j < room_height * 10; j += 32){
+//		if ((i % 64 == 0 && j % 64 == 0) or ( i % 64 > 0 && j % 64 > 0)){
+//			var color = c_grey;
+//		}
+//		else {
+//			var color = c_white;
+//		}
+//		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, 0, 0, color, 1);
+//		vertex_add_point(vertex_buffer, i + 32, j, 0, 0, 0, 1, 0, 0, color, 1);
+//		vertex_add_point(vertex_buffer, i + 32, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
 
-		vertex_add_point(vertex_buffer, i + 32, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, 0, 0, color, 1);
-	}
-}
+//		vertex_add_point(vertex_buffer, i + 32, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
+//		vertex_add_point(vertex_buffer, i, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
+//		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, 0, 0, color, 1);
+//	}
+//}
 
 vertex_end(vertex_buffer);
 

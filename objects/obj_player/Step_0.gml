@@ -39,6 +39,3 @@ if (mouse_check_button_pressed(mb_left)){
 	bullet.yspeed = 50 * vector[1];
 	bullet.zspeed = 50 * vector[2];
 }
-
-
-show_debug_message("(" + string(x) + ", " + string(y) + ") " + string(collision_circle(x, y, 10, obj_wall, false, true)));

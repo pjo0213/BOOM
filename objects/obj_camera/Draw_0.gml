@@ -24,3 +24,4 @@ with (obj_wall) {
 with (obj_bullet) {
 	event_perform(ev_draw, 0);
 }
+
