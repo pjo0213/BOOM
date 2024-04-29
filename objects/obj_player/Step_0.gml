@@ -27,10 +27,13 @@ if (keyboard_check(ord("D"))){
 	dy += dcos(look_direction) * move_speed;
 }
 
-if (collision_circle(x + dx, y + dy, 10, obj_wall, false, true) == noone){
-	x += dx;
-	y += dy;
-}
+//if (collision_circle(x + dx, y + dy, 10, obj_wall, false, true) == noone){
+//	x += dx;
+//	y += dy;
+//}
+
+x += dx;
+y += dy;
 
 if (mouse_check_button_pressed(mb_left)){
 	var vector = screen_to_world(window_mouse_get_x(), window_mouse_get_y(), obj_camera.view_matrix, obj_camera.projection_matrix);

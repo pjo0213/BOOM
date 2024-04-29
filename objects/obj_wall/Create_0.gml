@@ -3,25 +3,12 @@
 z = depth;
 depth = 0;
 
-vertex_format_begin();
-vertex_format_add_position_3d();
-vertex_format_add_normal();
-vertex_format_add_texcoord();
-vertex_format = vertex_format_end();
+uvs = sprite_get_uvs(spr_wall, 0);
 
 vertex_buffer = vertex_create_buffer();
-vertex_begin(vertex_buffer, vertex_format);
+	
+vertex_begin(vertex_buffer, obj_camera.vertex_format);
 
-vertex_position_3d(vertex_buffer, x, y, 0);
-vertex_position_3d(vertex_buffer, x + sprite_width, y, 0);
-vertex_position_3d(vertex_buffer, x + sprite_width, y, -sprite_height);
-
-vertex_position_3d(vertex_buffer, x + sprite_width, y, -sprite_height);
-vertex_position_3d(vertex_buffer, x, y, -sprite_height);
-vertex_position_3d(vertex_buffer, x, y, 0);
-
-vertex_normal(vertex_buffer, 0, 0, 1);
-
-vertex_texcoord(vertex_buffer, 0, 0)
+make_cuboid(vertex_buffer, x, y, z, 0, 0, 1, uvs[0], uvs[3], c_white, 1, sprite_height, sprite_width);
 
 vertex_end(vertex_buffer);

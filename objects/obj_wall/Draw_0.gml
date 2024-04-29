@@ -1,4 +1,3 @@
-
-vertex_submit(vertex_buffer, pr_trianglelist, -1);
+vertex_submit(vertex_buffer, pr_trianglelist, sprite_get_texture(spr_wall, 0));
 
 draw_self();
