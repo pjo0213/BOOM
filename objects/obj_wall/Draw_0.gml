@@ -1,4 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-draw_self();
 
+vertex_submit(vertex_buffer, pr_trianglelist, -1);
+
+draw_self();
