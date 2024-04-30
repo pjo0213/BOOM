@@ -39,6 +39,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
     {"id":{"name":"billboard","path":"scripts/billboard/billboard.yy",},},
     {"id":{"name":"make_cuboid","path":"scripts/make_cuboid/make_cuboid.yy",},},
     {"id":{"name":"screen_to_world","path":"scripts/screen_to_world/screen_to_world.yy",},},
@@ -57,6 +58,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",

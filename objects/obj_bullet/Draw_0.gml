@@ -2,3 +2,4 @@
 //vertex_submit(model, pr_trianglelist, -1);
 //matrix_set(matrix_world, matrix_build_identity());
 billboard(sprite_index, image_index, x, y, z);
+
