@@ -22,8 +22,12 @@
     {"name":"billboard","order":2,"path":"scripts/billboard/billboard.yy",},
     {"name":"make_cuboid","order":3,"path":"scripts/make_cuboid/make_cuboid.yy",},
     {"name":"screen_to_world","order":1,"path":"scripts/screen_to_world/screen_to_world.yy",},
+    {"name":"use_tdmc","order":4,"path":"scripts/use_tdmc/use_tdmc.yy",},
     {"name":"spr_bullet","order":3,"path":"sprites/spr_bullet/spr_bullet.yy",},
+    {"name":"spr_bullet7","order":6,"path":"sprites/spr_bullet7/spr_bullet7.yy",},
+    {"name":"spr_crosshair","order":4,"path":"sprites/spr_crosshair/spr_crosshair.yy",},
     {"name":"spr_floor","order":2,"path":"sprites/spr_floor/spr_floor.yy",},
+    {"name":"spr_player_shadow","order":5,"path":"sprites/spr_player_shadow/spr_player_shadow.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
   ],
 }
