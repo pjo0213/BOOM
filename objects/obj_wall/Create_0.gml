@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 z = 0;
-//depth = 0;
+depth = 0;
 
 uvs = sprite_get_uvs(spr_wall, 0)
 

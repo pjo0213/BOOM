@@ -17,21 +17,27 @@ vertex_format = vertex_format_end();
 vertex_buffer = vertex_create_buffer();
 vertex_begin(vertex_buffer, vertex_format);
 
-for (var i = 0; i < room_width * 10; i += 32) {
-	for (var j = 0; j < room_height * 10; j += 32){
-		if ((i % 64 == 0 && j % 64 == 0) or ( i % 64 > 0 && j % 64 > 0)){
-			var color = c_grey;
-		}
-		else {
-			var color = c_white;
-		}
-		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i + 32, j, 0, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i + 32, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
+var uvs = sprite_get_uvs(spr_floor, 0);
+tex_left = uvs[0];
+tex_top = uvs[1];
+tex_right = uvs[2];
+tex_bottom = uvs[3];
 
-		vertex_add_point(vertex_buffer, i + 32, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i, j + 32, 0, 0, 0, 1, 0, 0, color, 1);
-		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, 0, 0, color, 1);
+for (var i = 0; i < room_width; i += 64) {
+	for (var j = 0; j < room_height; j += 64){
+		//if ((i % 128 == 0 && j % 128 == 0) or (i % 128 > 0 && j % 128 > 0)){
+		//	var color = c_grey;
+		//}
+		//else {
+		//	var color = c_white;
+		//}
+		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, tex_left, tex_top, c_white, 1);
+		vertex_add_point(vertex_buffer, i + 64, j, 0, 0, 0, 1, tex_right, tex_top, c_white, 1);
+		vertex_add_point(vertex_buffer, i + 64, j + 64, 0, 0, 0, 1, tex_right, tex_bottom, c_white, 1);
+
+		vertex_add_point(vertex_buffer, i + 64, j + 64, 0, 0, 0, 1, tex_right, tex_bottom, c_white, 1);
+		vertex_add_point(vertex_buffer, i, j + 64, 0, 0, 0, 1, tex_left, tex_bottom, c_white, 1);
+		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, tex_left, tex_top, c_white, 1);
 	}
 }
 
