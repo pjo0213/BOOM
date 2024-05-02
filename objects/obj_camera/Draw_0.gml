@@ -1,4 +1,4 @@
-draw_clear(c_black);
+draw_clear(c_maroon);
 
 var camera = camera_get_active();
 
@@ -22,6 +22,10 @@ with (obj_wall) {
 }
 
 with (obj_bullet) {
+	event_perform(ev_draw, 0);
+}
+
+with (obj_enemy){
 	event_perform(ev_draw, 0);
 }
 
