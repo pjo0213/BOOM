@@ -29,3 +29,10 @@ with (obj_enemy){
 	event_perform(ev_draw, 0);
 }
 
+with (obj_store){
+	event_perform(ev_draw, 0);
+}
+
+with (obj_spawner){
+	event_perform(ev_draw, 0);
+}

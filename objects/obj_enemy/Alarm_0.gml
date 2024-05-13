@@ -6,6 +6,6 @@ target_y = obj_player.y;
 
 mp_grid_path(obj_control.grid, path, x, y, target_x, target_y, true);
 
-path_start(path, 10, path_action_stop, true);
+path_start(path, 5, path_action_stop, true);
 
-alarm_set(0, 120);
+alarm_set(0, 1);

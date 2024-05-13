@@ -2,7 +2,7 @@
 ///@func use_tdmc([place meeting func = place_meeting], [corner slip = 16], [corner slip speed = .5], [sprite catchup factor = .5])
 function use_tdmc(
   _placeMeeting = function(_x, _y){
-    return place_meeting(_x, _y, obj_wall); //Replace objWall with your object 
+    return place_meeting(_x, _y, obj_wall_type); //Replace objWall with your object 
   }, 
   _cornerSlip = 16, 
   _slipSpd = .5, 
