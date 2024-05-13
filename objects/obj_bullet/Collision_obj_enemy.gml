@@ -1,2 +1,2 @@
 instance_destroy();
-instance_destroy(other);
+other.enemy_health -= 1
