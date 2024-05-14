@@ -1,4 +1,4 @@
-z = -64;
+z = -48;
 depth = 0;
 
 move = use_tdmc();

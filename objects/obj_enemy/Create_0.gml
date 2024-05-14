@@ -15,3 +15,5 @@ alarm[0] = 1;
 
 
 enemy_health = 5;
+
+hit = false;

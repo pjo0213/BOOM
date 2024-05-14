@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+instance_destroy(other);
 
-// Inherit the parent event
-event_inherited();
+hit = true;
 
+enemy_health -= 1;
+
+
+alarm[1] = 30;
