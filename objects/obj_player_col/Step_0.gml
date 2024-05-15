@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Initialization of store collision (TBA)
 
 x = obj_player.x;
 y = obj_player.y

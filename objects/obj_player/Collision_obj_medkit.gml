@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Heal upon standing on top of medkit
 instance_destroy(other);
 
 health += 20;

@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Initialization of store (TBA)
 z = 0;
 depth = 0;
 

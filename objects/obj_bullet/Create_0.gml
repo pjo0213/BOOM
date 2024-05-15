@@ -1,3 +1,5 @@
+/// @description Initialization of player's bullet
+
 z = depth;
 depth = 0;
 

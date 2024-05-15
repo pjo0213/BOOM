@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Destroy enemy bullet upon impact walls
 instance_destroy();

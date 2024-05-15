@@ -1,3 +1,5 @@
+/// @description Initialization of enemy bullet
+
 z = -sprite_get_height(spr_enemy_medium) / 2;
 depth = 0;
 

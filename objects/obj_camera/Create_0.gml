@@ -1,8 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Initialization of 3D camera
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
-//gpu_set_tex_repeat(true);
 
 view_matrix = [];
 projection_matrix = [];
@@ -25,12 +23,6 @@ tex_bottom = uvs[3];
 
 for (var i = 0; i < room_width; i += 64) {
 	for (var j = 0; j < room_height; j += 64){
-		//if ((i % 128 == 0 && j % 128 == 0) or (i % 128 > 0 && j % 128 > 0)){
-		//	var color = c_grey;
-		//}
-		//else {
-		//	var color = c_white;
-		//}
 		vertex_add_point(vertex_buffer, i, j, 0, 0, 0, 1, tex_left, tex_top, c_white, 1);
 		vertex_add_point(vertex_buffer, i + 64, j, 0, 0, 0, 1, tex_right, tex_top, c_white, 1);
 		vertex_add_point(vertex_buffer, i + 64, j + 64, 0, 0, 0, 1, tex_right, tex_bottom, c_white, 1);

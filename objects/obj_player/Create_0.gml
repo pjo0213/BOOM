@@ -1,3 +1,5 @@
+/// @description Initialization of player
+
 z = -48;
 depth = 0;
 
@@ -14,5 +16,3 @@ sway_x_max = 20;
 
 sway_y = 0;
 sway_y_max = 20;
-
-//window_mouse_set_locked(true);

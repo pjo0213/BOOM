@@ -1,7 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-// Inherit the parent event
+/// @description Checks for hard enemy
 event_inherited();
 
 if (place_meeting(x, y, obj_player_col)){
@@ -18,9 +15,6 @@ if (!hit){
 			sprite_index = spr_enemy_hard_attack;	
 			health -= damage;
 		}
-		//else {
-		//	sprite_index = spr_enemy_hard;
-		//}
 	}
 	else {
 		sprite_index = spr_enemy_hard;	

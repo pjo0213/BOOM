@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Deducts enemy health if player bullet hits enemy
 instance_destroy(other);
 
 enemy_health -= .5;

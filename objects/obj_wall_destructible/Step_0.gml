@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Condition for destroying wall
 if (wall_health <= 0){	
 	instance_destroy(self);
 }

@@ -1,7 +1,4 @@
-//look_direction -=  window_mouse_get_delta_x() / 10;
-//look_pitch -= window_mouse_get_delta_y() / 10;
-//look_pitch = clamp(look_pitch, -85, 85);
-
+/// @description Player's movement and shooting
 var move_speed = 7;
 
 dx = 0;
@@ -47,7 +44,3 @@ if (obj_camera.view_matrix != undefined and obj_camera.projection_matrix != unde
 		//bullet.zspeed = 5 * vector[2];
 	}
 }
-
-//look_direction %= 360;
-
-//show_debug_message(string(look_direction % 360));

@@ -1,4 +1,4 @@
-
+/// @description Display 2D in 3D
 draw_clear(c_maroon);
 
 var camera = camera_get_active();
