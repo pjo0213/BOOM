@@ -15,4 +15,6 @@ sway_x_max = 20;
 sway_y = 0;
 sway_y_max = 20;
 
+health = 100;
+
 //window_mouse_set_locked(true);

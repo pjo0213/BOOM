@@ -8,6 +8,14 @@
 
 //move.xSpdYSpd(xspeed, yspeed);
 
-if (!enemy_health){
+if (enemy_health <= 0){
 	instance_destroy(self);
 }
+
+
+//if (attack){
+	
+//	target_x = x;
+//	target_y = y;
+	
+//}

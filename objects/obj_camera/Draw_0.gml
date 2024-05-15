@@ -21,8 +21,16 @@ with (obj_wall) {
 	event_perform(ev_draw, 0);
 }
 
+with (obj_wall_destructible){
+	event_perform(ev_draw, 0);	
+}
+
 with (obj_bullet) {
 	event_perform(ev_draw, 0);
+}
+
+with (obj_bullet_enemy_medium){
+	event_perform(ev_draw, 0)	
 }
 
 with (obj_enemy){
@@ -34,5 +42,9 @@ with (obj_store){
 }
 
 with (obj_spawner){
+	event_perform(ev_draw, 0);
+}
+
+with (obj_medkit){
 	event_perform(ev_draw, 0);
 }

@@ -44,7 +44,7 @@ if (obj_camera.view_matrix != undefined and obj_camera.projection_matrix != unde
 		var bullet = instance_create_depth(vector[3] + lengthdir_x(5, look_direction), vector[4] + lengthdir_y(5, look_direction), vector[5], obj_bullet);
 		bullet.xspeed = 25 * vector[0];
 		bullet.yspeed = 25 * vector[1];
-		bullet.zspeed = 5 * vector[2];
+		//bullet.zspeed = 5 * vector[2];
 	}
 }
 

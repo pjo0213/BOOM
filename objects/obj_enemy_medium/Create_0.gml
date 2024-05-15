@@ -4,3 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
+enemy_speed = 5;
+
+enemy_health = 5;

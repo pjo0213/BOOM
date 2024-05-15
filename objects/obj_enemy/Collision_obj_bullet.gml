@@ -2,9 +2,8 @@
 // You can write your code in this editor
 instance_destroy(other);
 
+enemy_health -= .5;
+
 hit = true;
-
-enemy_health -= 1;
-
 
 alarm[1] = 30;

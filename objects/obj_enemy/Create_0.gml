@@ -13,7 +13,10 @@ target_y = obj_player.y;
 
 alarm[0] = 1;
 
+enemy_speed = 5;
 
-enemy_health = 5;
+enemy_health = 10;
 
 hit = false;
+
+attack = false;
