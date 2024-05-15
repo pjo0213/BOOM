@@ -2,7 +2,7 @@
 // You can write your code in this editor
 randomize();
 
-health = 100000;
+health = 100;
 
 if (room == rm_game){
 	grid = mp_grid_create(0, 0, room_width/128, room_height/128,  128, 128);
