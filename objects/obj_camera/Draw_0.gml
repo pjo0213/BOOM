@@ -1,3 +1,4 @@
+
 draw_clear(c_maroon);
 
 var camera = camera_get_active();
